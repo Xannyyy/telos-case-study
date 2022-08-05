@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('event_entry', function (Blueprint $table) {
             $table->id();
-            $table->integer('init_time');
-            $table->integer('end_time');
+            $table->float('init_time');
+            $table->float('end_time');
             $table->timestamps();
         });
     }
